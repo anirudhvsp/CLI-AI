@@ -21,3 +21,24 @@ This repository contains two scripts, one for Windows and one for Linux, that ma
 ```bash
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
+```
+
+### Linux Commands
+```bash
+export AI_CHAT_API_URL="https://your-lambda-url.amazonaws.com"
+echo 'export PATH=$PATH:/path/to/your-repo' >> ~/.bashrc
+source ~/.bashrc
+```
+
+### Windows Commands
+```bash
+setx AI_CHAT_API_URL "https://your-lambda-url.amazonaws.com"
+setx PATH "%PATH%;C:\path\to\your-repo"
+```
+
+## Usage
+
+### Same for Windows and Linux
+```bash
+askAi is 9.11 greater than 9.9
+```
