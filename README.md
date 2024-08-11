@@ -1,6 +1,6 @@
 # CLI-AI
 
-This repository contains two scripts, one for Windows and one for Linux, that make a POST request to an AWS Lambda function running a Python package called `g4f`. This can be run locally as well but good for headless VMs and machines you don't wanna install python on.
+This repository contains two scripts, one for Windows and one for Linux, that make a POST request to an AWS Lambda function running a Python package called `g4f` (https://github.com/xtekky/gpt4free). This can be run locally as well but good for headless VMs and machines you don't wanna install python on.
 
 ## Features
 
