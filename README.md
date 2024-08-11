@@ -42,3 +42,4 @@ setx PATH "%PATH%;C:\path\to\your-repo"
 ```bash
 askAi is 9.11 greater than 9.9
 ```
+![image](https://github.com/user-attachments/assets/bd991593-4ddf-4b25-986f-3f821fbd9cd1)
