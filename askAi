@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Check if the API URL is set
+if [ -z "$AI_CHAT_API_URL" ]; then
+    echo "Please set the AI_CHAT_API_URL environment variable."
+    exit 1
+fi
+
+# Check if an argument was passed, if not prompt the user for input
+if [ -z "$1" ]; then
+    read -p "Enter your message: " user_input
+else
+    user_input="$*"
+fi
+
+# Make a POST request to the API using curl
+response=$(curl -s -X POST "$AI_CHAT_API_URL" -H "Content-Type: application/json" -d "{\"message\":\"$user_input\"}")
+
+# Extract the response message using grep
+message=$(echo "$response" | grep -oP '(?<="response": ")[^"]*')
+
+# Format the response message
+formatted_message=$(echo "$message" | sed -e 's/\\n/\n/g' -e 's/\*//g' -e 's/- /\n- /g' -e 's/\*\*//g')
+
+# Display the formatted response message
+echo -e "$formatted_message"
