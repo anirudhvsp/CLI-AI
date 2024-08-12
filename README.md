@@ -19,7 +19,7 @@ This repository contains two scripts, one for Windows and one for Linux, that ma
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/anirudhvsp/CLI-AI
 cd your-repo
 ```
 
